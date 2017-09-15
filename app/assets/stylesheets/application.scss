@@ -1,0 +1,251 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ */
+@import "bootstrap";
+
+body {
+background: image-url('/img/pexels-photo-96619.jpeg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+a {
+    all: unset;
+}
+
+a:hover
+{
+    color: #FFF9D4;
+     text-decoration:none;
+     cursor:pointer;
+}
+
+img body {
+  opacity: 0.7;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.container-card {
+  display: flex;
+  // flex-direction: column;
+}
+
+.item {
+    flex-grow: 1;
+    color: #FFF9D4;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.item-nav {
+  color: #FFF9D4;
+  font-size: 1.8em;
+  // writing-mode: vertical-rl;
+  // text-orientation: upright;
+  font-family: 'Josefin Sans', sans-serif;
+  opacity: .8;
+  position: relative;
+}
+
+.item-nav:hover {
+  transition-duration: .5s;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.item-txt {
+  font-size: 1.2em;
+  background-color: rgba(80,63,56,0.8);
+  padding: 1.5em;
+  border-radius: 20px;
+  margin: 1em;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.card {
+  font-family: 'Josefin Sans', sans-serif;
+  color: #FFF9D4;
+  border: 6px solid #FFF9D4;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.card-block p{
+  padding: 5%;
+}
+
+h4 {
+  padding-left: 5%;
+  padding-top: 5%;
+}
+
+.menu-body {
+  font-family: 'Josefin Sans', sans-serif;
+  max-width: 680px;
+  margin: 0 auto;
+  display: block;
+  color: #FFF9D4;
+  border: 6px solid #FFF9D4;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 3%;
+}
+
+.menu-section {
+  margin-bottom: 80px;
+}
+
+.menu-section-title {
+  font-size: 50px;
+  display: block;
+  font-weight:normal;
+  margin: 20px 0;
+  text-align: Center;
+}
+
+.menu-item {
+  margin: 35px 0;
+  font-size: 18px;
+}
+
+.menu-item-name{
+  font-weight: bold;
+  border-bottom: 2px dotted #FFF9D4;
+}
+
+.menu-item-description {
+  font-style: italic;
+  font-size: .9em;
+  line-height: 1.5em;
+}
+
+.menu-item-price{
+  float: right;
+  font-weight: bold;
+  font-family: arial;
+  margin-top: -22px;
+}
+/* NAVIGATION */
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  text-transform: uppercase;
+  display: block;
+  text-decoration: none;
+  font-weight: 800;
+  margin: 0 5px;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  opacity: 1;
+}
+
+/* stroke  underline menu*/
+nav.stroke ul li a,
+nav.fill ul li a {
+  position: relative;
+}
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #FFF9D4;
+  height: 3px;
+}
+nav.stroke ul li a:hover:after {
+  width: 100%;
+}
+
+nav.fill ul li a {
+  transition: all 2s;
+}
+
+nav.fill ul li a:after {
+  text-align: left;
+  content: '.';
+  margin: 0;
+  opacity: 0;
+}
+nav.fill ul li a:hover {
+  color: #FFF9D4;
+  z-index: 1;
+}
+nav.fill ul li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
+}
+
+#gore {
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: 0 auto;
+    padding: 1.5em;
+    -webkit-transition: background-image 0.2s ease-in-out;
+    transition: background-image 0.2s ease-in-out;
+}
+
+#dole {
+    display: flex;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.7);
+   flex-wrap: wrap;
+   justify-content: center;
+   max-width: 688px;
+}
+
+.slicice {
+    margin: 0 auto;
+    padding: 20px 20px;
+    max-width: 100%;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+
+}
+
+.slicice:hover {
+  cursor: pointer;
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.aktivna {
+    opacity: .6;
+}

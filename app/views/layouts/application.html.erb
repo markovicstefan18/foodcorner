@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fc</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application','https://fonts.googleapis.com/css?family=Josefin+Sans', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+<div class="container">
+  <a class="item item-logo" href="#">
+    <img src="/img/logo.png" alt="" height="312px">
+  </a>
+
+  <nav class="stroke">
+      <ul>
+        <li class="item item-nav"><a href="#onama">O nama</a></li>
+        <li class="item item-nav"><a href="#meni">Meni</a></li>
+        <li class="item item-nav"><a href="#lokacija">Lokacija</a></li>
+        <li class="item item-nav"><a href="#galerija">Galerija</a></li>
+        <li class="item item-nav"><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+</div>
+
+
+
+
+
+
+    <%= yield %>
+  </body>
+</html>
