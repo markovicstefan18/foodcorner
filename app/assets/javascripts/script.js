@@ -1,3 +1,5 @@
+
+
 $(document).on('click', 'a', function(event){
     event.preventDefault();
 
@@ -13,4 +15,9 @@ $(document).ready(function(){
   });
 
 
-})
+});
+
+
+$(document).ready(function(){
+  $(".icon-load").fadeOut("slow");
+});
