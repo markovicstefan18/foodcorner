@@ -18,6 +18,6 @@ $(document).ready(function(){
 });
 
 
-$(document).ready(function(){
+$(window).on("load", function(){
   $(".icon-load").fadeOut("slow");
 });
